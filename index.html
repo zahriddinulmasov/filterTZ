@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="visualy-hiddlen">FILTER</h1>
+      <div class="main__top">
+        <div class="container container-top">
+          <div class="main__selected">
+            <ul class="main__selected-list">
+              <!-- Selecteds -->
+            </ul>
+
+            <button  class="main__selected-btn">Clear</button>
+          </div>
+        </div>
+      </div>
+      <div class="main__item">
+        <div class="container">
+          <ul class="main__list">
+            <!-- Job item's -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <template class="main__selected-template">
+      <li class="main__selected-item">
+        <h4 class="main__selected-title">Frontend</h4>
+        <img
+          class="main__selected-close"
+          src=""
+          alt="icon close"
+          width="36"
+          height="36"
+        />
+      </li>
+    </template>
+
+    <template class="jobs__item" id="jobsItem">
+      <li class="main__item-wrapper">
+        <div class="main__item-left">
+          <img
+            src=""
+            class="main__item-img"
+            alt="photo job"
+          />
+          <div class="main__item-left-content-wrapper">
+            <div class="main__item-name-wrapper">
+              <h4 class="main__item-name">Photoshop</h4>
+              <span
+                class="main__item-span-new"
+                style="background-color: mediumturquoise; margin-right: 6px"
+                >NEW!</span
+              >
+              <span
+                class="main__item-span-featured"
+                style="background-color: #1d2327"
+                >FEATURED!</span
+              >
+            </div>
+
+            <a href="#" class="main__item-link">
+              <h2 class="main__item-title">Senior Frontend Developer</h2>
+            </a>
+
+            <div class="main__item-bottom">
+              <p class="main__item-desc experience">5d ago</p>
+              <span class="main__item-dot"></span>
+              <p class="main__item-desc type-work">Full Time</p>
+              <span class="main__item-dot"></span>
+              <p class="main__item-desc address">USA only</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__item-right">
+          <button class="main__item-role"></button>
+          <button class="main__item-level"></button>
+          <button class="main__item-language0"></button>
+          <button class="main__item-language1"></button>
+          <button class="main__item-language2"></button>
+        </div>
+      </li>
+    </template>
+
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
